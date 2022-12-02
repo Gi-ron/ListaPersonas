@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <ul *ngFor="let persona of ListPersonas;">
+    <li>
+      {{persona.nombre}}. {{persona.apellidos}}. {{persona.edad}}
+    </li>
+   </ul>
+
+  <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-content>
